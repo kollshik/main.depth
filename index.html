@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>калькулятор</title>
+  </head>
+  <body>
+    <h1>Калькулятор расхода смеси</h1>
+    <div class="contauner">
+      <div class="square">
+        <h2 class="square__title">Площадь помещения</h2>
+        <form name="main__square" class="square__container" action="#">
+          <h3>Ширина</h3>
+          <input type="number" name="width" id="" placeholder="м" />
+          <h3>Длинна</h3>
+          <input type="number" name="heigh" id="" placeholder="м"/>
+          <h3>Площадь</h3>
+          <input type="number" name="result" id="" placeholder="м2"/>
+          <button class="square__count" type="button">Подсчет</button>
+          <button class="square__clear" type="button">Очистить</button>
+        </form>
+      </div>
+      <div class="depth">
+        <h2 class="depth__title">Средня глубина</h2>
+        <form name="main__depth" class="depth__container" action="#">
+          <h3>Точка замера 1</h3>
+          <input type="text" name="depth__point_1" placeholder="см"/>
+          <h3>Точка замера 2</h3>
+          <input type="text" name="depth__point_2" placeholder="см"/>
+          <h3>Точка замера 3</h3>
+          <input type="number" name="depth__point_3" placeholder="см" />
+          <h3>Точка замера 4</h3>
+          <input type="number" name="depth__point_4" placeholder="см" />
+          <h3>Точка замера 5</h3>
+          <input type="number" name="depth__point_5" placeholder="см" />
+          <h3>Средняя глубинав ноль, равна :</h3>
+          <input type="text" name="depth__result" placeholder="см"/>
+          <button class="depth__count" type="button">Подсчет</button>
+          <button class="depth__clear" type="button">Очистить</button>
+        </form>
+      </div>
+      <div class="consumption">
+        <h2 class="consumption__title">Расход в мешках</h2>
+        <form name="main__consumption" class="consumption__container" action="#">
+          <h3>Расход смеси на 1мм на м2</h3>
+          <input type="text" name="consumption__width_1"  placeholder="кг" value="1.9"/>
+          <h3> + см к уровню стяжки</h3>
+          <input type="text" name="consumption__plus"  placeholder="кг" value="1"/>          <h3>Количество мешков 25кг</h3>
+          <input type="text" name="consumption__bag" placeholder="шт"/>
+          <button class="consumption__count" type="button">Подсчет</button>
+          <button class="consumption__clear" type="button">Очистить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
