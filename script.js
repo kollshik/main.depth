@@ -58,7 +58,6 @@ depthClear.onclick=function(){
     }
 
 
-
 //___Расход мешков смеси
 
 const mainСonsumption = document.forms.main__consumption;
@@ -67,14 +66,16 @@ let kolvo = mainСonsumption.consumption__bag;
 
 let plus = mainСonsumption.consumption__plus;
 
+let widthAll = mainСonsumption.consumption__width_all;
+
 const СonsumptionCount = document.querySelector('.consumption__count');
 const СonsumptionClear = document.querySelector('.consumption__clear');
 
 
-
 СonsumptionCount.onclick = function(){
  
-  
+    widthAll.value = (resultSquare.value * ((depthResult.value*1)+(plus.value*1))*10) * kg.value;
+
     kolvo.value = ((resultSquare.value * ((depthResult.value*1)+(plus.value*1))*10) * kg.value)/25;
 
     
